@@ -1186,6 +1186,7 @@ GameObject:
   - component: {fileID: 776492119}
   - component: {fileID: 776492121}
   - component: {fileID: 776492120}
+  - component: {fileID: 776492122}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1258,6 +1259,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &776492122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776492118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a53f782bdbc504d9dab91834d877b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementWiggle: 0.05
 --- !u!1 &969154915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxVerticalControlDistance: 1.75
-  MaxHorizontalControlDistance: 4
+  MaxHorizontalControlDistance: 4.25
   MoonHeight: 0.75
   MaxVerticalSpeed: 3
   MaxHorizontalSpeed: 5
@@ -1902,7 +1916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff698cb0540c2aa44b1163664331fa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
+  Speed: 2
 --- !u!4 &1395046583
 Transform:
   m_ObjectHideFlags: 0
