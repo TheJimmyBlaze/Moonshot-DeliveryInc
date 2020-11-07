@@ -7,9 +7,9 @@ using UnityEngine;
 /// </summary>
 public class Spaceship_Thruster : MonoBehaviour
 {
-    public float RotationModifier = -1f;
-    public float MinRotation = -90f;
-    public float MaxRotation = 90f;
+    public float RotationModifier = -1f;        //The ammount the thrusters rotates based on speed.
+    public float MinRotation = -90f;            //The minimum possible rotation of this truster (usually -90).
+    public float MaxRotation = 90f;             //The maximum possible rotation fo this truster (usually +90).
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +39,10 @@ public class Spaceship_Thruster : MonoBehaviour
     // Gets the scroll speed of the Spaceship_Rig
     private float GetShipSpeed()
     {
-        Spaceship_Scroll scroll = transform.parent.parent.gameObject.GetComponent<Spaceship_Scroll>();
-        float speed = scroll.Speed;
+        Spaceship_Scroller scroll = transform.parent.parent.gameObject.GetComponent<Spaceship_Scroller>();
+        Rigidbody2D ship = transform.parent.gameObject.GetComponent<Rigidbody2D>();
+
+        float speed = scroll.Speed + ship.velocity.x;
         return speed;
     }
 }
