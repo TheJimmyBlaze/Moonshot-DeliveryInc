@@ -19,5 +19,9 @@ public class BulletController : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector3(ProjectileSpeed, 0, 0));
+
+        Vector3 rigPosition = transform.parent.position;
+        if (transform.position.x > rigPosition.x + 10f)
+            Destroy(gameObject);
     }
 }
