@@ -37,9 +37,7 @@ public class TerrainController : MonoBehaviour
 
     private void SpawnTile()
     {
-        GameObject tile = Instantiate(Moon) as GameObject;
-        tile.transform.SetParent(transform);
-        tile.transform.position = Vector3.right * spawnLocationX;
-        spawnLocationX += tileLength;
+        Instantiate(Moon, Vector3.right * spawnLocationX, Quaternion.identity, transform);
+        spawnLocationX += Moon.GetComponent<SpriteRenderer>().size.x;
     }
 }
