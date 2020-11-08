@@ -17,9 +17,6 @@ public class TerrainController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
-       
-
         spaceship = GameObject.Find("Spaceship_Rig").transform;
 
 
