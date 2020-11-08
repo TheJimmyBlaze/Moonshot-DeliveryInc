@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: a77d107819d8c5349a79767398fd5bdc
+guid: 3c116812d91215c4384d1260d61457b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7992432577133394412
-    second: Spaceship_RearThruster
+      213: -4291092376003862555
+    second: Bullet_Bullet
   - first:
-      213: 505915340959856575
-    second: Spaceship_Turret
+      213: -5868721985653826466
+    second: Bullet_Flash
   - first:
-      213: 8767768958125712382
-    second: Spaceship_Cargo
-  - first:
-      213: -9022584506196327157
-    second: Spaceship_Chassis
-  - first:
-      213: -8442861796669178904
-    second: Spaceship_ForwardThruster
+      213: -6881670822088812489
+    second: Bullet_Shell
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,106 +95,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spaceship_RearThruster
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 78
-        width: 39
-        height: 42
-      alignment: 9
-      pivot: {x: 0.4937715, y: 0.71398944}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9bb4b4513daee60800000000000000
-      internalID: 7992432577133394412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spaceship_Turret
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 103
-        width: 57
-        height: 19
-      alignment: 9
-      pivot: {x: 0.15074158, y: 0.5529773}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb73558725f550700800000000000000
-      internalID: 505915340959856575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spaceship_Cargo
+      name: Bullet_Bullet
       rect:
         serializedVersion: 2
         x: 3
-        y: 9
-        width: 68
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef3a7cde96f5da970800000000000000
-      internalID: 8767768958125712382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spaceship_Chassis
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 28
-        width: 112
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b058930023759c280800000000000000
-      internalID: -9022584506196327157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spaceship_ForwardThruster
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 16
-        width: 56
-        height: 56
+        y: 52
+        width: 27
+        height: 7
       alignment: 9
-      pivot: {x: 0.5086749, y: 0.6908555}
+      pivot: {x: 0.88415617, y: 0.5137204}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eb31d99dede4da80800000000000000
-      internalID: -8442861796669178904
+      spriteID: 5ef17ed183af274c0800000000000000
+      internalID: -4291092376003862555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_Flash
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 50
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.010993576, y: 0.4919895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c1497a27c1e8ea0800000000000000
+      internalID: -5868721985653826466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_Shell
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 53
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738d93419d46f70a0800000000000000
+      internalID: -6881670822088812489
       vertices: []
       indices: 
       edges: []

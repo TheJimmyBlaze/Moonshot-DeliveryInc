@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Controls the direction the thrusters are pointing in.
 /// </summary>
-public class Spaceship_Thruster : MonoBehaviour
+public class SpaceshipThruster : MonoBehaviour
 {
     public float RotationModifier = -1f;        //The ammount the thrusters rotates based on speed.
     public float MinRotation = -90f;            //The minimum possible rotation of this truster (usually -90).
@@ -90,7 +90,7 @@ public class Spaceship_Thruster : MonoBehaviour
     // Gets the scroll speed of the Spaceship_Rig
     private Vector2 GetShipSpeed()
     {
-        Spaceship_Scroller scroll = transform.parent.parent.gameObject.GetComponent<Spaceship_Scroller>();
+        SpaceshipScroller scroll = transform.parent.parent.gameObject.GetComponent<SpaceshipScroller>();
         Rigidbody2D ship = transform.parent.gameObject.GetComponent<Rigidbody2D>();
 
         Vector2 speed = new Vector2(scroll.Speed + ship.velocity.x, ship.velocity.y);

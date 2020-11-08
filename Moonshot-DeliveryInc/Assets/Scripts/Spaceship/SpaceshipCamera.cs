@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Controls the camera attached to the ship rig. Makes it wiggle arround when stuff happens.
 /// </summary>
-public class Spaceship_Camera : MonoBehaviour
+public class SpaceshipCamera : MonoBehaviour
 {
     //Affects the ammount the camera is wiggled when moving.
     public float MovementWiggle = 0.05f;

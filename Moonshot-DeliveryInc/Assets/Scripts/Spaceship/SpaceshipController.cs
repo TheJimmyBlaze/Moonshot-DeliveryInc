@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Controls the spaceship within the rig, this affects the spaceships position relative to the camera and does not affect the scroll.
 /// </summary>
-public class Spaceship_Controller : MonoBehaviour
+public class SpaceshipController : MonoBehaviour
 {
     //The maximum distance from the camera the spaceship can be (either horizontal or vertical) before the ship can be controlled to move futher away.
     //NOTE: This is not the max distance, as the ship can coast a little further after reaching this distance.
