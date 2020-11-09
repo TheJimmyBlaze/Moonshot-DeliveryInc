@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Destorys the muzzle flash afters it's lifespan expires.
+/// Switches between the flash animation frames, destorying the object after all frames are cycled.
 /// </summary>
 public class FlashController : MonoBehaviour
 {
-    public float Lifespan = 2f;         //How long the flash will sit arround before being destroyed.
+    public Sprite[] FlashSprites;       //The sprites to cycle through.
+    public float Lifespan = 2f;         //How long each frame of the flash animation will last.
     private float spawnTime;            //When the flash was spawned.
 
     // Start is called before the first frame update
@@ -19,7 +20,14 @@ public class FlashController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime + Lifespan)
+        int frameIndex = (int)((Time.time - spawnTime) / Lifespan);
+        if (frameIndex >= FlashSprites.Length)
+        {
             Destroy(gameObject);
+            return;
+        }
+
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.sprite = FlashSprites[frameIndex];
     }
 }

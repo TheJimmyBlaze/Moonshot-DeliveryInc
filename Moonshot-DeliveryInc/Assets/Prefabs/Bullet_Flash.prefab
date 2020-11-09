@@ -71,13 +71,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 50
-  m_Sprite: {fileID: -5868721985653826466, guid: 3c116812d91215c4384d1260d61457b0,
-    type: 3}
+  m_Sprite: {fileID: 949519979782936586, guid: 3c116812d91215c4384d1260d61457b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.1, y: 0.11}
+  m_Size: {x: 0.32, y: 0.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,4 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95dd5abf339292e49b591747d7d26c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lifespan: 0.1
+  FlashSprites:
+  - {fileID: 949519979782936586, guid: 3c116812d91215c4384d1260d61457b0, type: 3}
+  - {fileID: 5359822956254766045, guid: 3c116812d91215c4384d1260d61457b0, type: 3}
+  - {fileID: 3283100143867642285, guid: 3c116812d91215c4384d1260d61457b0, type: 3}
+  Lifespan: 0.02

@@ -46,6 +46,9 @@ public class SpaceshipTurret : MonoBehaviour
                 Instantiate(Bullet, bulletSpawnLocation, Quaternion.identity, bulletParent);
                 Instantiate(MuzzleFlash, bulletSpawnLocation, Quaternion.identity, flashParent);
                 Instantiate(ShellCasing, shellCasingSpawnLocation, Quaternion.identity, bulletParent);
+
+                AudioSource shotSound = transform.Find("ShotSound").GetComponent<AudioSource>();
+                shotSound.Play();
             }
         }
     }

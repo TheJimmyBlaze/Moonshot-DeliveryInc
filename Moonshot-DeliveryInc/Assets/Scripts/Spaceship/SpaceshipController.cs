@@ -29,10 +29,16 @@ public class SpaceshipController : MonoBehaviour
     //The ammount of rotation you get per vertical velocity of the ship, bigger = more swirly ship.
     public float ShipSwirlyness = 6f;
 
+    //These variables affect the pitch of the thruster sound.
+    public float VelocityPitchMultiplier = 0.25f;
+    private AudioSource thrusterSounds;
+    private float originalThrusterPitch;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        thrusterSounds = transform.Find("ThrusterSound").GetComponent<AudioSource>();
+        originalThrusterPitch = thrusterSounds.pitch;
     }
 
     // Update is called once per frame
@@ -93,5 +99,8 @@ public class SpaceshipController : MonoBehaviour
         float vSpd = Mathf.Clamp(rigidBody.velocity.y, -MaxVerticalSpeed, MaxVerticalSpeed);
         float hSpd = Mathf.Clamp(rigidBody.velocity.x, -MaxHorizontalSpeed, MaxHorizontalSpeed);
         rigidBody.velocity = new Vector2(hSpd, vSpd);
+
+        float thrusterPitchModifier = rigidBody.velocity.magnitude * VelocityPitchMultiplier;
+        thrusterSounds.pitch = originalThrusterPitch + thrusterPitchModifier;
     }
 }

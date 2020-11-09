@@ -11,6 +11,21 @@ TextureImporter:
   - first:
       213: -6881670822088812489
     second: Bullet_Shell
+  - first:
+      213: 5677524885613108809
+    second: Bullet_Shot
+  - first:
+      213: 4303513255915808233
+    second: Bullet_Shell
+  - first:
+      213: 949519979782936586
+    second: Bullet_FlashLarge
+  - first:
+      213: 5359822956254766045
+    second: Bullet_FlashMedium
+  - first:
+      213: 3283100143867642285
+    second: Bullet_FlashSmall
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,43 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet_Bullet
+      name: Bullet_Shot
       rect:
         serializedVersion: 2
         x: 3
         y: 52
         width: 27
         height: 7
-      alignment: 9
-      pivot: {x: 0.88415617, y: 0.5137204}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef17ed183af274c0800000000000000
-      internalID: -4291092376003862555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Flash
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 50
-        width: 10
-        height: 11
-      alignment: 9
-      pivot: {x: 0.010993576, y: 0.4919895}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5c1497a27c1e8ea0800000000000000
-      internalID: -5868721985653826466
+      spriteID: 94ed86a7dce9ace40800000000000000
+      internalID: 5677524885613108809
       vertices: []
       indices: 
       edges: []
@@ -145,14 +139,77 @@ TextureImporter:
         width: 8
         height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 738d93419d46f70a0800000000000000
-      internalID: -6881670822088812489
+      spriteID: 9e5eb09518629bb30800000000000000
+      internalID: 4303513255915808233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_FlashLarge
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 29
+        width: 32
+        height: 14
+      alignment: 9
+      pivot: {x: 0.024371903, y: 0.49472263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08191e046f5d2d00800000000000000
+      internalID: 949519979782936586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_FlashMedium
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 36
+        height: 9
+      alignment: 9
+      pivot: {x: 0.017701797, y: 0.49179056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3ac86c49ae16a40800000000000000
+      internalID: 5359822956254766045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet_FlashSmall
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 43
+        height: 5
+      alignment: 9
+      pivot: {x: 0.017176809, y: 0.5295533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1c34daf2aef8d20800000000000000
+      internalID: 3283100143867642285
       vertices: []
       indices: 
       edges: []
