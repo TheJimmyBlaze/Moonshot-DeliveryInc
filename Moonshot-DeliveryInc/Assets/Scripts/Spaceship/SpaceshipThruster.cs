@@ -93,7 +93,11 @@ public class SpaceshipThruster : MonoBehaviour
         SpaceshipScroller scroll = transform.parent.parent.gameObject.GetComponent<SpaceshipScroller>();
         Rigidbody2D ship = transform.parent.gameObject.GetComponent<Rigidbody2D>();
 
-        Vector2 speed = new Vector2(scroll.Speed + ship.velocity.x, ship.velocity.y);
+        float scrollSpeed = 0f;
+        if (scroll != null)
+            scrollSpeed = scroll.Speed;
+
+        Vector2 speed = new Vector2(scrollSpeed + ship.velocity.x, ship.velocity.y);
         return speed;
     }
 }

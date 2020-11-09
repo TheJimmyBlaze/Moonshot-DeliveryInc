@@ -173,12 +173,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 337164283047981990, guid: 298ecaf820306bc41905a38baa2f4a80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 337164283608818811, guid: 298ecaf820306bc41905a38baa2f4a80,
         type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: bb86bc22434ffc540bff39cdcb63887d,
         type: 2}
+    - target: {fileID: 337164283722606814, guid: 298ecaf820306bc41905a38baa2f4a80,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.20412144
+      objectReference: {fileID: 0}
+    - target: {fileID: 337164283722606814, guid: 298ecaf820306bc41905a38baa2f4a80,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.19508722
+      objectReference: {fileID: 0}
+    - target: {fileID: 337164283722606814, guid: 298ecaf820306bc41905a38baa2f4a80,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.3018868
+      objectReference: {fileID: 0}
     - target: {fileID: 337164284210627632, guid: 298ecaf820306bc41905a38baa2f4a80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -239,5 +259,79 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spaceship_Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 337164284297455974, guid: 298ecaf820306bc41905a38baa2f4a80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 298ecaf820306bc41905a38baa2f4a80, type: 3}
+--- !u!1001 &5004350692052123821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5004350691334186584, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_Name
+      value: DeliveryShip_Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004350691334186587, guid: e4ccef091a0b16e45ad76fcad4d753f8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4ccef091a0b16e45ad76fcad4d753f8, type: 3}
