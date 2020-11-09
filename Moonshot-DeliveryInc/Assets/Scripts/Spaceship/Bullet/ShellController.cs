@@ -26,7 +26,8 @@ public class ShellController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -2f)
+        GameObject spaceship = GameObject.Find("Spaceship_Rig");
+        if (transform.position.x < spaceship.transform.position.x - 10f)
             Destroy(gameObject);
     }
 }

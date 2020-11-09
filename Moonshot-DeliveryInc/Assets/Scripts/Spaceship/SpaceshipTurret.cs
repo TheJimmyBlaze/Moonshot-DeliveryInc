@@ -14,13 +14,15 @@ public class SpaceshipTurret : MonoBehaviour
     public float FireInterval = 5f;     //The time between shots.
     private float lastShot;             //The last time a bullet was shot.
 
-    private Transform bulletParent;                 //This transform will parent the bullet stuff, this prevents the bullets from following the spaceship.
+    private Transform bulletParent;                 //This transform will parent the bullets, this prevents the bullets from following the spaceship.
+    private Transform shellParent;                  //This transform will parent the bullet shells, these will be dragged along with the terrain.
     private Transform flashParent;                  //This transform will parent muzzle flashes, this is just for cleanlyness.
 
     // Start is called before the first frame update
     void Start()
     {
         bulletParent = transform.parent.parent.Find("BulletObjects");
+        shellParent = GameObject.Find("ShellObjects").transform;
         flashParent = transform.Find("FlashObjects");
     }
 
@@ -45,7 +47,7 @@ public class SpaceshipTurret : MonoBehaviour
 
                 Instantiate(Bullet, bulletSpawnLocation, Quaternion.identity, bulletParent);
                 Instantiate(MuzzleFlash, bulletSpawnLocation, Quaternion.identity, flashParent);
-                Instantiate(ShellCasing, shellCasingSpawnLocation, Quaternion.identity, bulletParent);
+                Instantiate(ShellCasing, shellCasingSpawnLocation, Quaternion.identity, shellParent);
 
                 AudioSource shotSound = transform.Find("ShotSound").GetComponent<AudioSource>();
                 shotSound.Play();
