@@ -10,7 +10,7 @@ public class TerrainController : MonoBehaviour
     private float tileLength = 64 / 25;
     //private float tileLength = 64f / 10.0f;
     private int tilesOnScreen = 5;
-    public GameObject Moon;
+    public GameObject[] MoonTiles;
     private Transform spaceship;
     private int tilesSpawned = 0;
 
@@ -29,12 +29,14 @@ public class TerrainController : MonoBehaviour
         {
             SpawnTile();
             tilesSpawned++;
-        }
+        } 
     }
 
     private void SpawnTile()
     {
-        Instantiate(Moon, Vector3.right * spawnLocationX, Quaternion.identity, transform);
-        spawnLocationX += Moon.GetComponent<SpriteRenderer>().size.x;
+       
+        var randomTileIndex = Random.Range(0, MoonTiles.Length);
+        Instantiate(MoonTiles[randomTileIndex], Vector3.right * spawnLocationX, Quaternion.identity, transform);
+        spawnLocationX += MoonTiles[randomTileIndex].GetComponent<SpriteRenderer>().size.x;
     }
 }
