@@ -49,6 +49,9 @@ public class SpaceshipTurret : MonoBehaviour
 
                 AudioSource shotSound = transform.Find("ShotSound").GetComponent<AudioSource>();
                 shotSound.Play();
+
+                SpaceshipCamera cameraController = transform.parent.parent.Find("MainCamera").GetComponent<SpaceshipCamera>();
+                cameraController.AddJiggle(cameraController.ShotJiggle);
             }
         }
     }
