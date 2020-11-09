@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class BulletController : MonoBehaviour
 {
-    public float ProjectileSpeed = 4f;          //Speed of the bullet.
+    public float ProjectileSpeed = 8f;          //Speed of the bullet.
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(ProjectileSpeed, 0, 0));
+        transform.Translate(new Vector3(ProjectileSpeed * Time.deltaTime, 0, 0));
 
         Vector3 rigPosition = transform.parent.position;
         if (transform.position.x > rigPosition.x + 10f)
