@@ -165,7 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLength: 1000
-  Moon: {fileID: 9107438598909974070, guid: 01e24d7e57a7c72469b4984bfb66dd6b, type: 3}
+  MoonTiles:
+  - {fileID: 9107438598909974070, guid: 01e24d7e57a7c72469b4984bfb66dd6b, type: 3}
 --- !u!1001 &337164283357199495
 PrefabInstance:
   m_ObjectHideFlags: 0
